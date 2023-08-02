@@ -3,9 +3,6 @@ const cors = require('cors');
 const connectDB = require('./configs/db');
 require('dotenv').config();
 
-const { populateMembersCollection } = require('./BLL/membersBLL');
-const { populateMoviesCollection } = require('./BLL/moviesBLL');
-
 const moviesRouter = require('./routers/moviesRouter');
 const membersRouter = require('./routers/membersRouter');
 const subscriptionsRouter = require('./routers/subscriptionsRouter');
@@ -21,11 +18,8 @@ app.use('/movies', moviesRouter);
 app.use('/members', membersRouter);
 app.use('/subscriptions', subscriptionsRouter);
 
-connectDB().then(() => {
-  populateMembersCollection();
-  populateMoviesCollection();
+connectDB();
 
-  app.listen(port, () => {
-    console.log(`app is listening at http://localhost:${port}`);
-  });
+app.listen(port, () => {
+  console.log(`app is listening at http://localhost:${port}`);
 });
