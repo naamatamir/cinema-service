@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "populate-db": "node populateDB.js",
     "start:dev": "nodemon main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
