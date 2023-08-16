@@ -1,6 +1,7 @@
 
 # Movie Subscriptions Management MERN app
-https://github.com/naamatamir/movie-subscription-app/assets/106441652/ad24a67c-5c86-4661-b741-8e7679ed96d7
+
+https://github.com/naamatamir/cinema-service/assets/106441652/fecc5f2f-5bb2-4310-b879-17d0f7256238
 
 Built with micro-service architecture, this app utilizes data from external sources to track movies, members, subscriptions, and authorized users. It allows you to create, update, and delete these items as needed, and includes a role-based access control that enables different permissions for user roles.
 
